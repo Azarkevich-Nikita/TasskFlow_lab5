@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TaskFlow — Календарь</title><link rel="stylesheet" href="css/style.min.css"></head>
+<body data-page="calendar"><div class="app-shell"><aside class="sidebar" aria-label="Основная навигация">
+<a class="brand" href="index.html"><span class="brand-mark">✓</span><span>TaskFlow</span></a>
+<nav class="side-nav">
+<a class="nav-item" data-nav="tasks" href="index.html"><span>⌂</span><span>Задачи</span></a>
+<a class="nav-item" data-nav="calendar" href="calendar.html"><span>▣</span><span>Календарь</span></a>
+<a class="nav-item" data-nav="add-task" href="add-task.html"><span>＋</span><span>Добавить</span></a>
+</nav></aside><main class="main-content">
+<header class="topbar"><div class="title-wrap"><button class="mobile-menu" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
+<div><h1>Календарь</h1><p class="mobile-subtitle">План задач по дням</p></div></div>
+<div class="top-actions"><a class="btn btn-primary" href="add-task.html">＋ Добавить задачу</a></div></header>
+<section class="calendar-card"><div class="calendar-heading"><button class="icon-btn" data-calendar-prev aria-label="Предыдущий месяц">‹</button><h2 id="monthTitle"></h2><button class="icon-btn" data-calendar-next aria-label="Следующий месяц">›</button></div>
+<div class="calendar-weekdays"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span></div>
+<div class="calendar-grid" id="calendarGrid"></div></section>
+<section class="desktop-tasks"><div class="section-heading"><h2>Задачи на сегодня</h2><a class="link-btn" href="add-task.html">+ Новая задача</a></div>
+<div class="planned-tasks" id="todayTasks"></div></section>
+</main></div><nav class="mobile-nav" aria-label="Навигация">
+<a class="mobile-nav-item" data-nav="tasks" href="index.html"><span>⌂</span><small>Задачи</small></a>
+<a class="mobile-nav-item" data-nav="calendar" href="calendar.html"><span>▣</span><small>Календарь</small></a>
+<a class="mobile-nav-item" data-nav="add-task" href="add-task.html"><span>＋</span><small>Добавить</small></a>
+</nav><script src="js/script.min.js"></script></body></html>

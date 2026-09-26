@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TaskFlow — Добавить задачу</title><link rel="stylesheet" href="css/style.min.css"></head>
+<body data-page="add-task"><div class="app-shell"><aside class="sidebar" aria-label="Основная навигация">
+<a class="brand" href="index.html"><span class="brand-mark">✓</span><span>TaskFlow</span></a>
+<nav class="side-nav">
+<a class="nav-item" data-nav="tasks" href="index.html"><span>⌂</span><span>Задачи</span></a>
+<a class="nav-item" data-nav="calendar" href="calendar.html"><span>▣</span><span>Календарь</span></a>
+<a class="nav-item" data-nav="add-task" href="add-task.html"><span>＋</span><span>Добавить</span></a>
+</nav></aside><main class="main-content">
+<header class="topbar add-header"><div class="title-wrap"><button class="mobile-menu" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
+<div><p class="eyebrow">Новая запись</p><h1>Добавить задачу</h1><p class="mobile-subtitle">Заполните данные задачи</p></div></div>
+<a class="btn btn-secondary" href="index.html">Отмена</a></header>
+<section class="form-card"><form id="screenTaskForm" class="task-form">
+<div class="field"><label for="title">Название задачи</label><input id="title" name="title" required maxlength="100" placeholder="Например, подготовить презентацию"></div>
+<div class="field-row"><div class="field"><label for="date">Дата</label><input id="date" name="date" type="date" required></div>
+<div class="field"><label for="time">Время</label><input id="time" name="time" type="time"></div></div>
+<div class="field-row"><div class="field"><label for="category">Категория</label><select id="category" name="category"><option value="work">Работа</option><option value="study">Учёба</option><option value="personal">Личное</option><option value="health">Здоровье</option></select></div>
+<div class="field"><label>Приоритет</label><div class="priority"><button type="button">Низкий</button><button type="button" class="selected">Средний</button><button type="button">Высокий</button></div><input id="priority" name="priority" type="hidden" value="Средний"></div></div>
+<div class="field"><label for="description">Описание</label><textarea id="description" name="description" rows="5" placeholder="Добавьте подробности задачи..."></textarea></div>
+<div class="field"><label for="reminder">Напоминание</label><select id="reminder" name="reminder"><option value="30">За 30 минут до начала</option><option value="60">За 1 час до начала</option><option value="0">Без напоминания</option></select></div>
+<div class="form-actions"><a class="btn btn-secondary" href="index.html">Отмена</a><button class="btn btn-primary" type="submit">Сохранить задачу</button></div>
+</form></section></main></div><nav class="mobile-nav" aria-label="Навигация">
+<a class="mobile-nav-item" data-nav="tasks" href="index.html"><span>⌂</span><small>Задачи</small></a>
+<a class="mobile-nav-item" data-nav="calendar" href="calendar.html"><span>▣</span><small>Календарь</small></a>
+<a class="mobile-nav-item" data-nav="add-task" href="add-task.html"><span>＋</span><small>Добавить</small></a>
+</nav><script src="js/script.min.js"></script></body></html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TaskFlow — Мои задачи</title><link rel="stylesheet" href="css/style.min.css"></head>
+<body data-page="tasks"><div class="app-shell"><aside class="sidebar" aria-label="Основная навигация">
+<a class="brand" href="index.html"><span class="brand-mark">✓</span><span>TaskFlow</span></a>
+<nav class="side-nav">
+<a class="nav-item" data-nav="tasks" href="index.html"><span>⌂</span><span>Задачи</span></a>
+<a class="nav-item" data-nav="calendar" href="calendar.html"><span>▣</span><span>Календарь</span></a>
+<a class="nav-item" data-nav="add-task" href="add-task.html"><span>＋</span><span>Добавить</span></a>
+</nav></aside><main class="main-content">
+<header class="topbar">
+<div class="title-wrap"><button class="mobile-menu" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
+<div><h1>Мои задачи</h1><p class="mobile-subtitle">Все задачи в одном месте</p></div></div>
+<div class="top-actions"><label class="search-box"><span>⌕</span><input id="taskSearch" type="search" placeholder="Поиск задач..." aria-label="Поиск задач"></label>
+<a class="btn btn-primary" href="add-task.html">＋ Добавить задачу</a></div></header>
+<section class="filters" aria-label="Фильтр задач">
+<button class="filter active" data-filter="all">Все</button><button class="filter" data-filter="today">Сегодня</button>
+<button class="filter" data-filter="week">Неделя</button><button class="filter" data-filter="month">Месяц</button></section>
+<section class="task-card" id="taskList" aria-label="Список задач"><div class="empty-state" id="emptyTasks">Ничего не найдено</div></section>
+</main></div><nav class="mobile-nav" aria-label="Навигация">
+<a class="mobile-nav-item" data-nav="tasks" href="index.html"><span>⌂</span><small>Задачи</small></a>
+<a class="mobile-nav-item" data-nav="calendar" href="calendar.html"><span>▣</span><small>Календарь</small></a>
+<a class="mobile-nav-item" data-nav="add-task" href="add-task.html"><span>＋</span><small>Добавить</small></a>
+</nav><script src="js/script.min.js"></script></body></html>
